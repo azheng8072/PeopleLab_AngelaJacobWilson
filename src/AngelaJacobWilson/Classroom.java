@@ -26,6 +26,18 @@ public class Classroom {
         {
             gpa += students[i].gpa;
         }
+        gpa = gpa/students.length;
+    }
+
+    public void printClass(Teacher teacher, Student[] students)
+    {
+        System.out.println(teacher.toString());
+        System.out.println(teacher.getSubject());
+        System.out.println(students);
+
+
+
+
     }
 
 }
