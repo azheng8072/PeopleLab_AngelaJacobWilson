@@ -10,11 +10,11 @@ public class Teacher extends Person{
         this.subject = subject;
         this.title = title;
     }
-    public getSubject()
+    public String getSubject()
     {
         return this.subject;
     }
-    public toString()
+    public String toString()
     {
         return this.title + ". " + this.getFamilyName();
     }
