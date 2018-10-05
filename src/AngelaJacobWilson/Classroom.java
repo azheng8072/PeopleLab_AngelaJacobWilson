@@ -1,7 +1,5 @@
 package AngelaJacobWilson;
 
-import java.lang.reflect.Array;
-
 public class Classroom {
 
     private Student[] students;
@@ -9,22 +7,20 @@ public class Classroom {
     private String subject;
         public Classroom(Student[] students, Teacher teacher)
         {
-            super("Classroom");
             this.students = students;
             this.teacher = teacher;
 
         }
     public void getSubject(Teacher teacher)
     {
-        return teacher.getSubject();
+        return Teacher.getSubject();
     }
 
-    public void classAverage()
+    public void classAverage(double gpa)
     {
-        double gpa = 0;
         for (int i=0; i<students.length; i++)
         {
-            gpa += students[i].gpa;
+            gpa += gpa[i];
         }
         gpa = gpa/students.length;
     }
