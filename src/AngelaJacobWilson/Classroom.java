@@ -1,16 +1,31 @@
 package AngelaJacobWilson;
 
+import java.lang.reflect.Array;
+
 public class Classroom {
 
-    private String firstname;
-    private String lastname;
+    private Student[] students;
+    private Teacher teacher;
     private String subject;
-        public Teacher(String firstname, String lastname, String subject)
+        public Classroom(Student[] students, Teacher teacher)
         {
-            super("Teacher");
-            this.firstname = firstname;
-            this.lastname = lastname;
-            this.subject = subject;
+            super("Classroom");
+            this.students = students;
+            this.teacher = teacher;
 
         }
+    public void getSubject(Teacher teacher)
+    {
+        return teacher.getSubject();
+    }
+
+    public void classAverage()
+    {
+        double gpa = 0;
+        for (int i=0; i<students.length; i++)
+        {
+            gpa += students[i].gpa;
+        }
+    }
+
 }
