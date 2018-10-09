@@ -12,9 +12,9 @@ public class Runner {
     public static void main(String[] args){
 
         int num = (int)(Math.random() * 6);
-        String Student = firstName[num] + " " + familyName[num] + " has gpa of " + gpa[num] +" has a major of " + major[num] + " and goes to" + School[num];
+        String Student = firstName[num] + " " + familyName[num] + " has gpa of " + gpa[num] +" has a major of " + major[num] + " and goes to " + School[num];
 
-
+        System.out.println(Student);
     }
 }
 
