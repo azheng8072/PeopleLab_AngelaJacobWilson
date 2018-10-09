@@ -11,18 +11,18 @@ public class Classroom {
             this.teacher = teacher;
 
         }
-    public void getSubject(Teacher teacher)
+    public String getSubject(Teacher teacher)
     {
-        return Teacher.getSubject();
+        return teacher.getSubject();
     }
 
-    public void classAverage(double gpa)
+    public void classAverage(double gpa2, double[]gpa)
     {
         for (int i=0; i<students.length; i++)
         {
-            gpa += gpa[i];
+            gpa2 += gpa[i];
         }
-        gpa = gpa/students.length;
+        gpa2 = gpa2/students.length;
     }
 
     public void printClass(Teacher teacher, Student[] students)
