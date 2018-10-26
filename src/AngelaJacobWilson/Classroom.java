@@ -9,6 +9,7 @@ public class Classroom {
         {
             this.students = students;
             this.teacher = teacher;
+            fillSeats();
 
         }
     public String getSubject(Teacher teacher)
@@ -30,10 +31,26 @@ public class Classroom {
         System.out.println(teacher.toString());
         System.out.println(teacher.getSubject());
         System.out.println(students);
+    }
+    public void fillSeats()
+    {
+        int row = 0;
+        int seats = 6;
+        for(int n=0; n<students.length; n++)
+        {
+            if(seats == 0)
+            {
+                row = row +1;
+                System.out.println("There is now " + row + " full row.");
+                seats = 6;
 
-
-
-
+            }
+            else
+            {
+                seats--;
+            }
+            System.out.println(students[n] + " sits at row " + row + " seat " + seats + ".");
+        }
     }
 
 }

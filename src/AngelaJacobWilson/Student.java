@@ -31,4 +31,5 @@ public class Student extends Person {
     public void setSchool(String School){
         this.School = School;
     }
+
 }
